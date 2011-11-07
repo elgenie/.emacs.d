@@ -17,6 +17,7 @@
       )
 
 ;; --------------------------------------------------------------------------------
+(load-theme 'wombat)
 
 ;; ... terminate whitespace with prejudice
 ;; (if (fboundp 'delete-trailing-whitespace)
