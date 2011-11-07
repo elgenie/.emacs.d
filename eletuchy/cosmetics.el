@@ -1,3 +1,10 @@
+(add-to-list 'custom-theme-load-path
+             (expand-file-name (concat user-emacs-directory "eletuchy/emacs-color-theme-solarized")))
+
+;; show trailing whitespace ...
+(set-face-background 'trailing-whitespace "#900000")
+(setq-default show-trailing-whitespace t)
+
 (defun inconsolata-font (size)
   (interactive "p")
   (set-default-font

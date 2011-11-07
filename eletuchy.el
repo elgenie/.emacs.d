@@ -18,10 +18,7 @@
 
 ;; --------------------------------------------------------------------------------
 
-;; show trailing whitespace ...
-(set-face-background 'trailing-whitespace "#900000")
-(setq-default show-trailing-whitespace t)
-;; ... and terminate with extreme prejudice
+;; ... terminate whitespace with prejudice
 ;; (if (fboundp 'delete-trailing-whitespace)
 ;;     (add-hook 'write-file-hooks 'delete-trailing-whitespace)
 ;; )
@@ -30,9 +27,13 @@
 (setq require-final-newline 'visit-save
       next-line-add-newlines nil)
 
+;; any subdirectories of the custom dir should be on the load-path
+(let ((default-directory (concat user-emacs-directory "/eletuchy")))
+  (normal-top-level-add-subdirs-to-load-path))
+
 ;; TEMPORARILY COMMENTED OUT
 ;; (require 'yas-jit)
-;; (setq yas/root-directory (concat dotfiles-dir "/snippets"))
+;; (setq yas/root-directory (concat user-emacs-directory "/eletuchy/snippets"))
 ;; (yas/jit-load)
 
 ;; --------------------------------------------------------------------------------
