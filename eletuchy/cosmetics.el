@@ -1,5 +1,3 @@
-(defalias 'zb 'color-theme-zenburn)
-
 (defun inconsolata-font (size)
   (interactive "p")
   (set-default-font
