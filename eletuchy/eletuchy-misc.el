@@ -15,5 +15,9 @@
                (set-visited-file-name new-name)
                (set-buffer-modified-p nil)))))))
 
+(autoload 'Lorem-ipsum-insert-paragraphs "lorem-ipsum" "" t)
+(autoload 'Lorem-ipsum-insert-sentences "lorem-ipsum" "" t)
+(autoload 'Lorem-ipsum-insert-list "lorem-ipsum" "" t)
+
 (provide 'eletuchy-misc)
 ;;; eletuchy-misc.el ends here
