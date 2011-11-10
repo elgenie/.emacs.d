@@ -1,6 +1,12 @@
+
+;; NOTE: themes should not be placed under eletuchy because emacs
+;; starter kit loads all the elisp files under $USERNAME
 (add-to-list 'custom-theme-load-path
              (expand-file-name "color-theme-solarized" el-elisp-external-dir))
-(load-theme 'solarized-dark t)
+(add-to-list 'custom-theme-load-path
+             (expand-file-name "zenburn" el-elisp-external-dir))
+;; (load-theme 'solarized-dark t)
+(load-theme 'zenburn t nil)
 
 ;; show trailing whitespace ...
 (set-face-background 'trailing-whitespace "#900000")

@@ -4,3 +4,9 @@
 [submodule "eletuchy/external/js2-mode"]
 	path = eletuchy/external/js2-mode
 	url = git://github.com/mooz/js2-mode
+[submodule "eletuchy/external/posterous"]
+	path = eletuchy/external/posterous
+	url = https://github.com/snim2/posterous.el.git
+[submodule "eletuchy/external/zenburn"]
+	path = eletuchy/external/zenburn
+	url = https://github.com/bbatsov/zenburn-emacs
