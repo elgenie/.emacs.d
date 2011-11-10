@@ -1,5 +1,6 @@
 (add-to-list 'custom-theme-load-path
-             (expand-file-name (concat user-emacs-directory "eletuchy/emacs-color-theme-solarized")))
+             (expand-file-name "color-theme-solarized" el-elisp-external-dir))
+(load-theme 'solarized-dark t)
 
 ;; show trailing whitespace ...
 (set-face-background 'trailing-whitespace "#900000")
