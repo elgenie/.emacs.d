@@ -30,8 +30,6 @@
 ;; any subdirectories of the custom dir should be on the load-path
 (setq el-elisp-custom-dir (expand-file-name "eletuchy" user-emacs-directory))
 (setq el-elisp-external-dir (expand-file-name "external" el-elisp-custom-dir))
-(let ((default-directory el-elisp-custom-dir))
-  (normal-top-level-add-subdirs-to-load-path))
 (let ((default-directory el-elisp-external-dir))
   (normal-top-level-add-subdirs-to-load-path))
 
