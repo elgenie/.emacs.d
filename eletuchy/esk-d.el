@@ -14,11 +14,8 @@
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 (add-to-list 'auto-mode-alist '("\\.di$" . d-mode))
 
-;; We never want to edit Rubinius bytecode
-(add-to-list 'completion-ignored-extensions ".rbc")
-
 ;; Not strictly necessary, since D is based on C, but whatever works
-(add-hook 'd-mode-hook 'run-coding-hook)
+(add-hook 'd-mode-hook 'esk-prog-mode-hook)
 
 (provide 'esk-d)
 ;; esk-d.el ends here

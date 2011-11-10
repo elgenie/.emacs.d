@@ -1,3 +1,6 @@
 [submodule "eletuchy/external/color-theme-solarized"]
 	path = eletuchy/external/color-theme-solarized
 	url = https://github.com/sellout/emacs-color-theme-solarized.git
+[submodule "eletuchy/external/js2-mode"]
+	path = eletuchy/external/js2-mode
+	url = git://github.com/mooz/js2-mode
